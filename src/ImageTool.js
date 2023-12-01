@@ -31,7 +31,7 @@ export default function ImageTool(props) {
   const location = useLocation();
   const aspectParam = new URLSearchParams(location.search).get("aspect");
 
-  
+
 
   const selectOptions = [
     {
@@ -159,7 +159,7 @@ export default function ImageTool(props) {
         label: "9:16",
         value: { unit: "%", width: 0, aspect: 9 / 16 },
       });
-    } else {
+    } if(!aspectParam) {
       setCrop({ unit: "%", width: 0 });
       setDefaultOption({
         label: "Free",
