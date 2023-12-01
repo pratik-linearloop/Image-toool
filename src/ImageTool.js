@@ -157,6 +157,12 @@ export default function ImageTool(props) {
         label: "9:16",
         value: { unit: "%", width: 0, aspect: 9 / 16 },
       });
+    } else {
+      setCrop({ unit: "%", width: 0 });
+      setDefaultOption({
+        label: "Free",
+        value: { unit: "%", width: 0 },
+      });
     }
   }, [aspectParam]);
 
@@ -176,7 +182,7 @@ export default function ImageTool(props) {
         </div>
         {showSelect && (
           <Select
-          className="selectField"
+            className="selectField"
             options={selectOptions}
             defaultValue={defaultOption}
             onChange={(option) => setCrop(option?.value)}
