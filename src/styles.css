@@ -1,29 +1,54 @@
 .App {
-    font-family: sans-serif;
-    text-align: center;
-  }
-  
-  img {
-    max-width: 100%;
-  }
-  
-  input[type="file"] {
-    display: none;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+input[type="file"] {
+  display: none;
 }
 .custom-file-upload {
-    border: 1px solid #ccc;
-    display: inline-block;
-    padding: 6px 12px;
-    cursor: pointer;
+  cursor: pointer !important;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 14px;
+  padding: 11px 12px;
+  background-color: #4245a8;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
 }
-.ReactCrop{
+.ReactCrop {
   max-width: 80% !important;
 }
-.functions{
+.functions {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 12px;
+  padding: 12px;
 }
-.canvas{
+.canvas {
   display: none;
+}
+.downloadButton {
+  border-radius: 4px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 14px;
+  padding: 11px 12px;
+  background-color: #4245a8;
+  box-shadow: 0 0 2px rgba(0,0,0,.25);
+  border: none;
+  cursor: pointer;
+}
+
+.selectField{
+  margin-left: 4px;
+  margin-right: 4px;
+  min-width: 100px;
 }
