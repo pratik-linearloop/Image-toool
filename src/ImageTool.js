@@ -42,10 +42,10 @@ export default function ImageTool(props) {
       label: "1:1",
       value: { unit: "%", width: 0, aspect: 1 / 1 },
     },
-    // {
-    //   label: "3:2",
-    //   value: { unit: "%", width: 0, aspect: 3 / 2 },
-    // },
+    {
+      label: "2:3",
+      value: { unit: "%", width: 0, aspect: 2 / 3 },
+    },
     // {
     //   label: "4:5",
     //   value: { unit: "%", width: 0, aspect: 4 / 5 },
@@ -132,13 +132,13 @@ export default function ImageTool(props) {
         value: { unit: "%", width: 0, aspect: 1 / 1 },
       });
     }
-    // if (aspectParam === "3:2") {
-    //   setCrop({ unit: "%", width: 0, aspect: 3 / 2 });
-    //   setDefaultOption({
-    //     label: "3:2",
-    //     value: { unit: "%", width: 0, aspect: 3 / 2 },
-    //   });
-    // }
+    if (aspectParam === "2:3") {
+      setCrop({ unit: "%", width: 0, aspect: 2 / 3 });
+      setDefaultOption({
+        label: "2:3",
+        value: { unit: "%", width: 0, aspect: 2 / 3 },
+      });
+    }
     // if (aspectParam === "4:5") {
     //   setCrop({ unit: "%", width: 0, aspect: 4 / 5 });
     //   setDefaultOption({
