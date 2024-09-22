@@ -46,14 +46,14 @@ export default function ImageTool(props) {
       label: "2:3",
       value: { unit: "%", width: 0, aspect: 2 / 3 },
     },
-    // {
-    //   label: "4:5",
-    //   value: { unit: "%", width: 0, aspect: 4 / 5 },
-    // },
-    // {
-    //   label: "4:6",
-    //   value: { unit: "%", width: 0, aspect: 4 / 6 },
-    // },
+    {
+      label: "4:5",
+      value: { unit: "%", width: 0, aspect: 4 / 5 },
+    },
+    {
+      label: "4:6",
+      value: { unit: "%", width: 0, aspect: 4 / 6 },
+    },
     {
       label: "5:3",
       value: { unit: "%", width: 0, aspect: 5 / 3 },
@@ -139,20 +139,20 @@ export default function ImageTool(props) {
         value: { unit: "%", width: 0, aspect: 2 / 3 },
       });
     }
-    // if (aspectParam === "4:5") {
-    //   setCrop({ unit: "%", width: 0, aspect: 4 / 5 });
-    //   setDefaultOption({
-    //     label: "4:5",
-    //     value: { unit: "%", width: 0, aspect: 4 / 5 },
-    //   });
-    // }
-    // if (aspectParam === "4:6") {
-    //   setCrop({ unit: "%", width: 0, aspect: 4 / 6 });
-    //   setDefaultOption({
-    //     label: "4:6",
-    //     value: { unit: "%", width: 0, aspect: 4 / 6 },
-    //   });
-    // }
+    if (aspectParam === "4:5") {
+      setCrop({ unit: "%", width: 0, aspect: 4 / 5 });
+      setDefaultOption({
+        label: "4:5",
+        value: { unit: "%", width: 0, aspect: 4 / 5 },
+      });
+    }
+    if (aspectParam === "4:6") {
+      setCrop({ unit: "%", width: 0, aspect: 4 / 6 });
+      setDefaultOption({
+        label: "4:6",
+        value: { unit: "%", width: 0, aspect: 4 / 6 },
+      });
+    }
     if (aspectParam === "9:16") {
       setCrop({ unit: "%", width: 0, aspect: 9 / 16 });
       setDefaultOption({
